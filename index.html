@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veena Dharini Sculpture</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+header h1{
+    color:#8B4513;
+}
+
+.language-box{
+    text-align:right;
+    margin-bottom:20px;
+}
+
+select{
+    padding:8px 12px;
+    font-size:16px;
+}
+
+img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.content{
+    margin-top:25px;
+    line-height:1.8;
+}
+
+h2{
+    color:#8B4513;
+    margin-top:20px;
+}
+
+ul{
+    margin-left:25px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Veena Dharini Sculpture</h1>
+    <p>QR Code Museum Information System</p>
+</header>
+
+<div class="language-box">
+    <label><b>Select Language:</b></label>
+    <select id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="hi">हिन्दी</option>
+    </select>
+</div>
+
+<!-- Replace image path -->
+<img src="veena-dharini.jpg" alt="Veena Dharini Sculpture">
+
+<div id="content" class="content">
+
+<h2>About Sculpture</h2>
+
+<p>
+This sculpture is an excellent example of Solanki-period art dating to
+the 11th–12th century CE. It depicts a graceful female figure holding a
+veena, symbolizing music, artistic expression, and cultural prosperity.
+The calm facial expression, detailed ornaments, elegant attire, and
+finely carved features highlight the extraordinary craftsmanship of
+medieval Gujarat.
+</p>
+
+<h2>Historical Significance</h2>
+
+<p>
+The Veena Dharini Sculpture is an important example of the artistic and
+cultural achievements of the Solanki Period. During this era, temple
+architecture and sculpture flourished, reflecting the region's
+prosperity and devotion to art, religion, and learning.
+
+The depiction of a female musician holding a veena symbolizes the
+significance of music and fine arts in medieval Indian society.
+Today, this sculpture serves as a valuable historical artifact,
+providing insight into the social life, artistic traditions,
+and cultural heritage of medieval Gujarat.
+</p>
+
+<h2>Key Details</h2>
+
+<ul>
+<li><strong>Period:</strong> 11th–12th Century CE</li>
+<li><strong>Dynasty:</strong> Solanki Dynasty</li>
+<li><strong>Material:</strong> Stone</li>
+<li><strong>Style:</strong> Maru-Gurjara Architecture</li>
+<li><strong>Category:</strong> Female Musician Sculpture</li>
+<li><strong>Location:</strong> Siddhpur, Gujarat</li>
+</ul>
+
+</div>
+
+</div>
+
+<script>
+
+const translations = {
+
+en: `
+<h2>About Sculpture</h2>
+<p>
+This sculpture is an excellent example of Solanki-period art dating to
+the 11th–12th century CE. It depicts a graceful female figure holding a
+veena, symbolizing music, artistic expression, and cultural prosperity.
+The calm facial expression, detailed ornaments, elegant attire, and
+finely carved features highlight the extraordinary craftsmanship of
+medieval Gujarat.
+</p>
+
+<h2>Historical Significance</h2>
+<p>
+The Veena Dharini Sculpture is an important example of the artistic and
+cultural achievements of the Solanki Period. During this era, temple
+architecture and sculpture flourished, reflecting the region's
+prosperity and devotion to art, religion, and learning.
+
+The depiction of a female musician holding a veena symbolizes the
+significance of music and fine arts in medieval Indian society.
+Today, this sculpture serves as a valuable historical artifact,
+providing insight into the social life, artistic traditions,
+and cultural heritage of medieval Gujarat.
+</p>
+
+<h2>Key Details</h2>
+<ul>
+<li><strong>Period:</strong> 11th–12th Century CE</li>
+<li><strong>Dynasty:</strong> Solanki Dynasty</li>
+<li><strong>Material:</strong> Stone</li>
+<li><strong>Style:</strong> Maru-Gurjara Architecture</li>
+<li><strong>Category:</strong> Female Musician Sculpture</li>
+<li><strong>Location:</strong> Siddhpur, Gujarat</li>
+</ul>
+`,
+
+gu: `
+<h2>પ્રતિમા વિશે</h2>
+<p>
+આ વીણાધારિણી પ્રતિમા સોલંકી યુગ (ઈ.સ. 11મી–12મી સદી)ની ઉત્તમ
+શિલ્પકૃતિ છે. પ્રતિમામાં એક સુંદર નારીને હાથમાં વીણા ધારણ કરેલી
+સ્થિતિમાં દર્શાવવામાં આવી છે, જે સંગીત, કલા અને સાંસ્કૃતિક
+સમૃદ્ધિનું પ્રતિક માનવામાં આવે છે.
+
+પ્રતિમાના મુખમંડળ પરની શાંતિપૂર્ણ અભિવ્યક્તિ, સુશોભિત આભૂષણો,
+વસ્ત્રોની નાજુક કોતરણી અને શરીરના પ્રમાણબદ્ધ આકાર તે સમયના
+શિલ્પકારોની અદભૂત કળાને પ્રદર્શિત કરે છે.
+</p>
+
+<h2>ઐતિહાસિક મહત્વ</h2>
+<p>
+વીણાધારિણી પ્રતિમા સોલંકી યુગની કલા અને સંસ્કૃતિનું મહત્વપૂર્ણ
+પ્રતીક છે. સોલંકી યુગને ગુજરાતના ઇતિહાસનો સુવર્ણકાળ માનવામાં આવે
+છે, જેમાં સ્થાપત્ય, શિલ્પકળા, સંગીત અને સાહિત્યનો વિશેષ વિકાસ
+થયો હતો.
+
+આ પ્રતિમા મધ્યકાલીન સમાજમાં સંગીત અને લલિત કલાઓના મહત્વને
+દર્શાવે છે. આજે આ પ્રતિમા ગુજરાતના સમૃદ્ધ સાંસ્કૃતિક વારસા અને
+કલાત્મક પરંપરાની જીવંત સાક્ષી તરીકે ઉભી છે.
+</p>
+
+<h2>મુખ્ય વિગતો</h2>
+<ul>
+<li><strong>સમયગાળો:</strong> 11મી–12મી સદી</li>
+<li><strong>વંશ:</strong> સોલંકી વંશ</li>
+<li><strong>સામગ્રી:</strong> પથ્થર</li>
+<li><strong>શૈલી:</strong> મારુ-ગુર્જર સ્થાપત્ય</li>
+<li><strong>શ્રેણી:</strong> સંગીતકાર નારી પ્રતિમા</li>
+<li><strong>સ્થળ:</strong> સિદ્ધપુર, ગુજરાત</li>
+</ul>
+`,
+
+hi: `
+<h2>प्रतिमा के बारे में</h2>
+<p>
+यह वीणाधारिणी प्रतिमा सोलंकी काल (11वीं–12वीं शताब्दी) की एक
+उत्कृष्ट शिल्पकृति है। इसमें वीणा धारण किए हुए एक महिला संगीतकार
+को दर्शाया गया है, जो संगीत, कला और सांस्कृतिक समृद्धि का प्रतीक है।
+</p>
+
+<h2>ऐतिहासिक महत्व</h2>
+<p>
+यह प्रतिमा सोलंकी युग की कला और संस्कृति का महत्वपूर्ण उदाहरण है।
+यह मध्यकालीन गुजरात में संगीत, स्थापत्य और शिल्पकला के उच्च स्तर
+को दर्शाती है। आज यह प्रतिमा सांस्कृतिक विरासत और ऐतिहासिक गौरव
+की प्रतीक मानी जाती है।
+</p>
+
+<h2>मुख्य विवरण</h2>
+<ul>
+<li><strong>काल:</strong> 11वीं–12वीं शताब्दी</li>
+<li><strong>वंश:</strong> सोलंकी वंश</li>
+<li><strong>सामग्री:</strong> पत्थर</li>
+<li><strong>शैली:</strong> मारु-गुर्जर स्थापत्य</li>
+<li><strong>श्रेणी:</strong> महिला संगीतकार प्रतिमा</li>
+<li><strong>स्थान:</strong> सिद्धपुर, गुजरात</li>
+</ul>
+`
+};
+
+function changeLanguage(){
+    let lang = document.getElementById("language").value;
+    document.getElementById("content").innerHTML = translations[lang];
+}
+
+</script>
+
+</body>
+</html>
